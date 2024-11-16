@@ -18,8 +18,6 @@ import Features from "./pages/Intro/Features";
 import Pricing from "./pages/Intro/Pricing";
 
 // Import authentication pages
-import Login from "./pages/Auth/Login";
-import Signup from "./pages/Auth/Signup";
 
 // Import main pages
 import Dashboard from "./pages/Main/Dashboard";
@@ -29,28 +27,20 @@ import PageNotFound from "./pages/Error/PageNotFound";
 
 // Import bootstrap css
 import "bootstrap/dist/css/bootstrap.min.css";
+import Login from "./components/Login/Login"
+import SignIn from "./components/SignIn/SignIn"
+import ForgetPassword from "./components/ForgetPassword/ForgetPassword"
+import NavbarComponent from "./components/Navbar/Navbar";
+import Navbar from "./components/Nav/Navbar";
+import BuyToken from "./components/BuyToken/Buy";
 const App = () => (
   <BrowserRouter>
+    <Navbar /> {/* If Navbar should be persistent */}
     <Routes>
-      <Route exact path="/" element={<UserauthProvider />}>
-        <Route exact path="/" element={<PrivateRouteCheck />}>
-          <Route exact path="/" element={<Layout />}>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/features" element={<Features />} />
-            <Route exact path="/pricing" element={<Pricing />} />
-            <Route exact path="/login" element={<Login />} />
-            <Route exact path="/signup" element={<Signup />} />
-
-            <Route exact path="/" element={<ChatBubbleLayout />}>
-              <Route exact path="/dashboard" element={<Dashboard />} />
-            </Route>
-          </Route>
-        </Route>
-        <Route exact path="*" element={<PageNotFound />} />
-      </Route>
+      <Route path="/" element={<BuyToken />} />
     </Routes>
   </BrowserRouter>
-
 );
+
 
 export default App;

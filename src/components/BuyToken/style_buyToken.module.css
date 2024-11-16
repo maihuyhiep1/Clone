@@ -1,0 +1,111 @@
+.buyForm {
+    width: 30rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;
+    justify-content: space-between; /* Distribute space evenly */
+    position: relative;
+    border-radius: 20px;
+border: 2px solid var(--Black, #000);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    top: 100px;
+  }
+
+  
+  .title {
+    margin-top:5%;
+    font-size: 30px;
+    font-family: "Lato-Bold", Helvetica, sans-serif;
+    font-weight: 700;
+    width: 100%;
+    display: block; /* Ensure it takes up the entire row */
+    text-align: center; /* Center text horizontally */
+    margin-bottom: 1rem; /* Add spacing below the title */
+    box-sizing: border-box;
+  }
+  .form {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    width: 100%;
+    height: 100%;
+  }
+  .addOrMinus {
+    display: flex;
+    align-items: center; /* Center children horizontally */    
+    justify-content: center; /* Distribute space evenly */
+    gap: 10px;
+    position: relative;
+    top: 18px;
+}
+
+.token{
+    text-align: center;
+    font-family: "Lato-Bold", Helvetica;
+    font-size: 25px;
+    font-weight: 700;
+    border-left: 3px solid ;
+    border-right: 3px solid ;
+    width: 100%;
+    padding: 8%;
+
+}
+.add{
+    display: flex;
+    padding: 15px;
+    border: solid 2px;
+    background-color: #ffffff;
+
+}
+.minus{
+    display: flex;
+    padding: 15px;
+    border: solid 2px;
+    background-color: #ffffff;
+
+}
+
+.button{
+    display: flex;
+    gap: 100px;
+    position: relative;
+    top: 70px;
+}
+.submitButton {
+    padding: 15px;
+    background-color: #1488db;
+    color: #ffffff;
+    font-family: "Lato-Bold", Helvetica;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    width: 150px;
+    margin: auto;
+  }
+  .cancelButton {
+    padding: 15px;
+    background-color: #ffffff;
+    color: #1488db;
+    font-family: "Lato-Bold", Helvetica;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    width: 100px;
+    margin: auto;
+    border: solid #1488db 2.5px;
+  }
+  .submitButton:hover {
+    background-color: #ffffff;
+    color: #1056c7;
+    border: solid 3px;
+  }
+  .cancelButton:hover {
+    background-color: #1056c7;
+    color: #ffffff;
+  }

@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@atlaskit/avatar": "^21.17.2",
+    "@atlaskit/icon": "^22.24.1",
+    "@atlaskit/icon-lab": "^1.0.1",
     "@chatscope/chat-ui-kit-react": "^2.0.3",
     "@chatscope/chat-ui-kit-styles": "^1.4.0",
     "@emotion/react": "^11.13.3",
